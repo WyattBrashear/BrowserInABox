@@ -9,7 +9,7 @@ document.getElementById('goButton').addEventListener('click', function() {
     try {
         const urlObj = new URL(url);
         if (urlObj.protocol === 'https:' || urlObj.protocol === 'http:') {
-            document.getElementById('browserFrame').src = urlObj.href;
+            document.getElementById('browserFrame').src = `/proxy?url=${encodeURIComponent(urlObj.href)}`;
         } else {
             alert('Invalid URL protocol. Only HTTP and HTTPS are allowed.');
         }
