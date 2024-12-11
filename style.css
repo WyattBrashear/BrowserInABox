@@ -9,8 +9,8 @@ body {
 }
 
 .browser {
-    width: 2000%;
-    height: 2000%;
+    width: 90%;
+    height: 90%;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -35,10 +35,6 @@ body {
     cursor: pointer;
 }
 
-#browserFrame {
-    flex-grow: 1;
-    border: none;
-}
 #browserFrame {
     flex-grow: 1;
     border: none;
