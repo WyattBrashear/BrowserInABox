@@ -9,8 +9,8 @@ document.getElementById('goButton').addEventListener('click', function() {
     try {
         const urlObj = new URL(url);
         if (urlObj.protocol === 'https:' || urlObj.protocol === 'http:') {
-            // Use CORS Anywhere proxy server
-            const proxyUrl = `https://cors-anywhere.herokuapp.com/${urlObj.href}`;
+            // Browser in a boxes proxy server
+            const proxyUrl = `http://170.187.138.45:3000/${urlObj.href}`;
             document.getElementById('browserFrame').src = proxyUrl;
         } else {
             alert('Invalid URL protocol. Only HTTP and HTTPS are allowed.');
